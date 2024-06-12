@@ -48,7 +48,24 @@ body{
     width: 22px;
     border-radius: 50%;
     margin-right: 15px;
-    border: 5px solid #8E49E8;
-    background-color: red;
+    border: 5px solid transparent;
+    background-color: #ccc;
     display: inline-block;
+    box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
 }
+#one:checked ~ label.first,
+#two:checked ~ label.second,
+#three:checked ~ label.thirth{
+    border-color: #8E49E8;
+    background: #D5BBF7;
+}
+#one:checked ~ label.first .circle,
+#two:checked ~ label.second .circle,
+#three:checked ~ label.thirth .circle{
+    border-color: #8E49E8;
+    background-color: #fff;
+}
+.card .content input[type="radio"]{
+    display: none;
+}
+
